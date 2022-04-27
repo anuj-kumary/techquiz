@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    background-color: var(--bg-color);
+}
+
+.auth__form {
+    padding-bottom: 1rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: #eee 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.auth__heading {
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    margin: 2rem 0;
+}
+
+.auth__title>.heading {
+    color: var(--btn-bg);
+}
+
+.label__text,
+.login__link,
+.login__nav {
+    color: var(--off-white)
+}
+
+.login__link:hover {
+    color: var(--primary-color);
+}
+
+.input-txt {
+    border: 1px solid #b9a7a5;
+}
+
+input[type=password] {
+    border: 1px solid var(--border-color);
+}
+
+::placeholder {
+    font-family: var(--font-family);
+    color: var(--btn-bg-color);
+}
+
+.login__link {
+    font-size: .8rem;
+}
+
+.login__nav {
+    padding-top: 1.3rem;
+    font-size: .8rem;
+}
+
+
+.login___btn--now {
+    border-bottom: 1px solid var(--warning-color);
+    color: var(--off-white);
+    margin-left: .3rem;
+    padding-bottom: .2rem;
+}
+
+.login___btn--now:hover {
+    color: var(--warning-color);
+}
+
+.btn__signup>button {
+    width: 100%;
+}
+
+.btn__signup .btn__secondary {
+    color: var(--btn-bg-color);
+    background-color: var(--btn-bg);
+}
