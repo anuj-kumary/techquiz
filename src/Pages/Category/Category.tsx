@@ -10,7 +10,7 @@ export const Category = () => {
             <div className="category__card">
                 {
                     CategoryData.map((cat) => (
-                        <div className="card">
+                        <div className="card" key={cat.id}>
                             <div className="card__img">
                                 <img src={cat.img} alt={cat.category} />
                             </div>

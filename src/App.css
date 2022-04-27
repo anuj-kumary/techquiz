@@ -1,5 +1,10 @@
 :root {
     --bg-color: #1e2024;
+    --active-color: #34343d;
+    --main-bg-color: #1e2024;
+    --btn-bg-color: #34343d;
+    --overlay-bg: rgba(18, 18, 18, 0.301);
+    --btn-bg: #dbdbdb;
 }
 
 body {

@@ -1,8 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useAuth } from '../../contexts/auth-context'
 import "./Navbar.css"
 
 export const Navbar = () => {
+    const { authToken, setAuthToken, setAuthUser } = useAuth()
+    const navigate = useNavigate()
+
+    const logoutHandler = () => {
+        localStorage.removeItem("token");
+        localStorage.removeItem("user");
+        setAuthToken("");
+        setAuthUser(null);
+        navigate("/");
+    }
     return (
         <>
 
@@ -14,10 +25,17 @@ export const Navbar = () => {
                 </div>
 
                 <ul className='navbar__social'>
+                    {
+                        authToken ? <Link onClick={logoutHandler} to='/' className='text navbar__social-link' title='Logout'>
+                            Logout
+                        </Link>
+                            :
+                            <Link to='/signin' className='text navbar__social-link' title='Login'>
+                                Signin
+                            </Link>
 
-                    <Link to='/' className='text navbar__social-link' title='Login'>
-                        Login
-                    </Link>
+                    }
+
                 </ul>
             </nav>
 
