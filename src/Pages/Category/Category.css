@@ -1,0 +1,24 @@
+.card {
+    height: fit-content;
+    padding: 1rem 0;
+}
+
+.category__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.category__heading {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.card__img {
+    height: 15rem;
+}
+
+.card__img img {
+    object-fit: contain;
+}

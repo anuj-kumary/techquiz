@@ -1,4 +1,22 @@
+:root {
+    --bg-color: #1e2024;
+}
+
 body {
     width: 100vw;
     min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.text {
+    color: var(--off-grey);
+}
+
+.link__text {
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.link__text:hover {
+    color: var(--primary-color);
 }

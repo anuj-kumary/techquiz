@@ -1,0 +1,15 @@
+.rules__container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rule__list {
+    padding: .5rem 0;
+    list-style-type: circle;
+}
+
+.rule__btn {
+    text-align: center;
+}
