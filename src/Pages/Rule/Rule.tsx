@@ -1,9 +1,12 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { QuizData } from '../../Data/QuizData'
 import "./Rule.css"
 
 export const Rule = () => {
-    const params = useParams()
+    const location = useLocation()
+    const quizData = QuizData.filter((el) => el.category === location?.state)
+
     return (
         <>
             <h1 className='text text__center category__heading'>Rules</h1>
@@ -17,7 +20,8 @@ export const Rule = () => {
             </div>
 
             <div className='rule__btn'>
-                <button className='btn'>Let's Start</button>
+                <Link to={`/${quizData[0]?.id}/1`}
+                    className='btn text link__text'>Let's Start</Link>
             </div>
 
         </>

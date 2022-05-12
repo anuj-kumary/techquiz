@@ -23,5 +23,5 @@ body {
 }
 
 .link__text:hover {
-    color: var(--primary-color);
+    color: var(--warning-color);
 }
