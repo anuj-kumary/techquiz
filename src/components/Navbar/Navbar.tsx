@@ -19,7 +19,7 @@ export const Navbar = () => {
 
             <nav className='navigation'>
                 <div className='navigation__logo'>
-                    <Link to='/' className='text navigation__heading'>
+                    <Link to='/' className='link__text text navigation__heading'>
                         techQuiz
                     </Link>
                 </div>
