@@ -38,3 +38,13 @@
 .background__wrong {
     background-color: var(--error-color);
 }
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn .btn {
+    text-transform: uppercase;
+}
