@@ -11,7 +11,7 @@ export const Category = () => {
   useEffect(() => {
     sessionStorage.removeItem('answerData');
     dispatch({ type: 'RESET' });
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
